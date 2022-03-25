@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <header class="indexpage">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html">Portfolio</a> 
+            <a href="coursevideos.html">Courses</a>
+            <a class="backpage" href="index.html">Back</a>
+        </nav> 
+    </header>
+    <!--Time Table-->
+    <h1 class="h1_2">
+        My Time Table
+    </h1>
+    <table border="1" cellspacing="3" align="center" class="tab" id="timetable">
+		<tr>
+			<th rowspan="2">Days</th>
+			<th rowspan="2" colspan="6" class="time">Timings</th>
+		</tr>
+        <tr></tr>
+		<tr>
+			<td align="center"></td>
+            <td>8:30-10:00</td>
+            <td>10:00-11:20</td>
+            <td>11:30-12:50</td>
+            <td>1:00-2:20</td>
+            <td>2:30-3:50</td>
+            <td>3:55-5:15</td>
+            <td></td>
+		</tr>
+        <tr id="r1">
+            <td id="r1c1">Monday</td>
+            <td id="r1c2"></td>
+            <td id="r1c3"></td>
+            <td id="r1c4">UXE</td>
+            <td id="r1c5">Psychology</td>
+            <td id="r1c6"></td>
+            <td id="r1c7"></td>
+            <td id="r1c8">
+                <button id="r1_edit" onclick="func_edit('r1')" class="ed"> Edit </button>
+                <br>
+                <button id="r1_delete" onclick="func_delete('r1')" class="del"> Delete </button>
+            </td>
+        </tr>
+		<tr id="r2">
+			<td id="r2c1">Tuesday</td>
+            <td id="r2c2">Web Programming</td>
+            <td id="r2c3"></td>
+            <td id="r2c4"></td>
+            <td id="r2c5">Cloud Computing</td>
+            <td id="r2c6"></td>
+            <td id="r2c7">Entrepreneurship</td>
+            <td id="r2c8">
+                <button id="r2_edit" onclick="func_edit('r2')" class="ed"> Edit </button>
+                <br>
+                <button id="r2_delete" onclick="func_delete('r2')" class="del"> Delete </button>
+            </td>
+		</tr>
+		<tr id="r3">
+            <td id="r3c1">Wednesday</td>
+            <td id="r3c2"></td>
+            <td id="r3c3"></td>
+            <td id="r3c4">UXE</td>
+            <td id="r3c5">Psychology</td>
+            <td id="r3c6"></td>
+            <td id="r3c7"></td>
+            <td id="r3c8">
+                <button id="r3_edit" onclick="func_edit('r3')" class="ed"> Edit </button>
+                <br>
+                <button id="r3_delete" onclick="func_delete('r3')" class="del"> Delete </button>
+            </td>
+		</tr>
+		<tr id="r4">
+			<td id="r4c1">Thursday</td>
+            <td id="r4c2">Web Programming</td>
+            <td id="r4c3"></td>
+            <td id="r4c4"></td>
+            <td id="r4c5">Cloud Computing</td>
+            <td id="r4c6"></td>
+            <td id="r4c7">Entrepreneurship</td>
+            <td id="r4c8">
+                <button id="r4_edit" onclick="func_edit('r4')" class="ed"> Edit </button>
+                <br>
+                <button id="r4_delete" onclick="func_delete('r4')" class="del"> Delete </button>
+            </td>
+		</tr>
+        <tr id="r5">
+            <td id="r5c1">Friday</td>
+            <td id="r5c2"></td>
+            <td id="r5c3"></td>
+            <td id="r5c4"></td>
+            <td id="r5c5"></td>
+            <td id="r5c6"></td>
+            <td id="r5c7"></td>
+            <td id="r5c8">
+                <button id="r5_edit" onclick="func_edit('r5')" class="ed"> Edit </button>
+                <br>
+                <button id="r5_delete" onclick="func_delete('r5')" class="del"> Delete </button>
+            </td>
+        </tr>
+        <tr id="new_row">
+            <td id="newc1"><input id="rowc1" type="text" value=""></td>
+            <td id="newc2"><input id="rowc2" type="text" value=""></td>
+            <td id="newc3"><input id="rowc3" type="text" value=""></td>
+            <td id="newc4"><input id="rowc4" type="text" value=""></td>
+            <td id="newc5"><input id="rowc5" type="text" value=""></td>
+            <td id="newc6"><input id="rowc6" type="text" value=""></td>
+            <td id="newc7"><input id="rowc7" type="text" value=""></td>
+            <td id="newc8"><button id="rowc8" onclick="func_addRow()" class="arow">Add Row </button></td>
+        </tr>
+    </table>
+    <h4>For the whole CS Time Table, Click the link below:</h4>
+    <a class= "link" href="https://docs.google.com/spreadsheets/u/0/d/1AmI4kS6uz5vb_9QCvomrkPTK64C0co9PgyXe18L8s5o/htmlview#" target="_blank">CS Time Table</a>
+    </body>
+    <footer class="footer-main">
+        <div class="footer-address">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>House no 123</span> Rawalpindi, Punjab</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>0900 78601</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:i180600@nu.edu.pk">i180600@nu.edu.pk</a></p>
+            </div>
+        </div>
+        <div class="footer-media">
+            <div class="footer-icons">
+                <p class="footer-p1"> Social Media Accounts</p>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/malokjeephotography/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/areesha-maqsood-4815b01b3/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/areeshamaqsood" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-p2">
+                    All Rights Reserved <i class="fa fa-copyright" aria-hidden="true"> </i> 2022.
+                </p>
+            </div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+        <script src="script.js"></script>
+    </head>
+    <body class="indexpage">
+    <header class="header1">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a> 
+            <a href="mytimetable.html">TimeTable</a> 
+            <a href="coursevideos.html">Courses</a>
+        </nav> 
+        <div class="pfheader">
+            <div class="pfp">
+                <img src="./images/areesha.png" alt="Areesha" class="mypic" id="AreePic" onmouseover="func_enlarge()" onmouseout="func_original()">
+            </div>
+            <div class="pftitle">
+                <h1 class="Areesha">
+                    Areesha Maqsood's Portfolio
+                </h1>
+                <p class="uni">
+                    Last semester CS student at <a class="unilink" href="http://isb.nu.edu.pk/" target="_blank"> FAST NUCES ISB</a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <article class="art1" id="about">
+        <div>
+            <div>
+                <h1 class="about">
+                    About Me
+                </h1>
+            </div>
+            <div>
+                <p>
+                    Computer Science major in her last year of bachelor’s degree with a tremendous educational track record. A hardworking and ambitious young lady with innovative mindset and excellent communication skills. I am very well adjusted to new ideas and can develop inventive and creative solutions to problems.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article>
+    <div class="courses">
+        <h1 class="coursehead">My Courses</h1>
+        <ul>
+            <li>
+                <h2>Major Courses</h2>    
+                <p>User Experience Engineering</p>
+                <p>Web Programming</p>       
+                <p>Cloud Computing</p>
+                <p>Natural Language Processing</p>
+            </li>
+            <li>
+                <h2>Other Courses</h2>
+                <p>Entrepreneurship</p>
+                <p>Psychology</p>
+                <p>Marketing</p>
+                <p>Management</p>
+            </li>
+        </ul>
+    </div>
+    </article>
+    <article id="portfolio">
+        <div class="project">
+            <div id="divProj">
+                <h1 class="projhead">My Projects</h1>
+                <h1 id="projNum"></h1>
+            </div>
+            <div id="divBut">
+                <button id="formBut" onclick="func_dispForm()">Add Project</button>
+            </div>
+            <br><br>
+            <!-- DIV FOR FORM -->
+            <div id="formDiv">
+                <form id="projForm">
+                    <h1>ADD YOUR PROJECT HERE</h1>
+                    <label>Title</label> <br>
+                    <input type="text" placeholder="Title" id="title"> <br>
+                    <label>Year</label> <br>
+                    <input type="text" placeholder="xxxx" id="year"> <br>
+                    <label>Technologies</label> <br>
+                        <label id="technology ai" >
+                            <input type="checkbox" class="tech" value="Artificial Intelligence">Artificial Intelligence
+                        </label>
+                        <label id="technology ml">
+                            <input type="checkbox" class="tech" value="Machine Learning">Machine Learning
+                        </label>
+                        <label id="technology nlp">
+                            <input type="checkbox" class="tech" value="Natural Language Processing">Natural Language Processing
+                        </label>
+                        <label id="technology vr">
+                            <input type="checkbox" class="tech" value="Virtual Reality">Virtual Reality
+                        </label>
+                        <br>
+                        <label id="technology vr">
+                            <input type="checkbox" class="tech" value="Data Science">Data Science
+                        </label>
+                        <label id="technology vr">
+                            <input type="checkbox" class="tech" value="BlockChain">BlockChain
+                        </label>
+                        <label id="technology vr">
+                            <input type="checkbox" class="tech" value="Internet Of Things">Internet Of Things
+                        </label>
+                        <br>
+                    <label>Description</label> <br> 
+                    <textarea placeholder="Write here..." id="description"></textarea> <br><br>
+                </form>
+                <button id="subBut" onclick="func_addToProject()">Submit</button>
+            </div>
+            <br><br>
+            <ul id="ulProj">
+                <li>
+                    <img src="./images/smartphone.png" alt="GroceryApp" class="projs">
+                    <h2>Final Year Project (2021-2022) </h2>  
+                    <img src="./images/smartphone.png" alt="GroceryApp" class="mob">
+                    <p>
+                        Making a grocery mobile application in Flutter with Firebase as the database where the
+                        high-level features include Urdu Speech Recognition and Smart Categorization of the products, 
+                        and Auto Generation of Grocery List.
+                    </p>  
+                </li>
+                <li>
+                    <img src="./images/hospweb.png" alt="HospApp" class="projs">
+                    <h2>Software Engineering Project (2020-2021)</h2>
+                    <img src="./images/hospweb.png" alt="HospApp" class="mob">
+                    <p>
+                        Made an Hospital Management System website using python and django framework. Frontend was made using
+                        HTML, CSS and Bootstrap and the backend was connected with MongoDB.
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/fitweb.png" alt="FitApp" class="projs1">
+                    <h2>Database Management System (2021)</h2>
+                    <img src="./images/fitweb.png" alt="FitApp" class="mob">
+                    <p>
+                        Made an exercise web application that stores your exercise records and plans for you
+                        using SQL on Oracle 11g and linking frontend through PHP to the Database
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/shapes.png" alt="Shapes" class="projs1">
+                    <h2>Object Oriented Programming (2019)</h2>
+                    <img src="./images/shapes.png" alt="Shapes" class="mob">
+                    <p>
+                        Created a desktop screensaver of moving objects using the 
+                        Object-Oriented C++Programming Language. Applied all the concepts of
+                        OOP. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+        </article>
+        <article>
+            <div class="workex">
+                <h1 class="workhead">Work Experience</h1>
+                <ul>
+                    <li class="workli">
+                        <img src="./images/fflogo.png" alt="GroceryApp" class="projs2">
+                        <h2> Fauji Foundation </h2>  
+                        <img src="./images/fflogo.png" alt="GroceryApp" class="mob">
+                        <p>
+                            <b>Aug – Sep 2021</b>
+                            Successfully completed internship in the IT department where I worked on a web development project. I worked on the frontend part and 
+                            learned React JS. For the business layer we used Java and backend was made using MySQL.
+                        </p>  
+                    </li>
+                </ul>
+        </article>
+    <footer class="footer-main">
+        <div class="footer-address">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>House no 123</span> Rawalpindi, Punjab</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>0900 78601</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:i180600@nu.edu.pk">i180600@nu.edu.pk</a></p>
+            </div>
+        </div>
+        <div class="footer-media">
+            <div class="footer-icons">
+                <p class="footer-p1"> Social Media Accounts</p>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/malokjeephotography/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/areesha-maqsood-4815b01b3/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/areeshamaqsood" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-p2">
+                    All Rights Reserved <i class="fa fa-copyright" aria-hidden="true"> </i> 2022.
+                </p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

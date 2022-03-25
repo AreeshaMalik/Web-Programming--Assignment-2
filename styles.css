@@ -1,0 +1,516 @@
+/* For index page */
+.header1{
+    background-color: rgb(44, 42, 42);
+	border-radius: 20px;
+}
+.Areesha{
+    text-align: center;
+    color: white;
+}
+.uni{
+    font-family: 'Roboto Slab', serif;
+	color: white;
+}
+.uni .unilink{
+	color:  rgb(140, 211, 208);
+	text-decoration: none;
+}
+.uni .unilink:hover{
+	text-decoration: underline;
+}
+.pfheader{
+	display: flex;
+	margin: 0 auto !important;
+	text-align: center;
+	justify-content: center;
+	/* padding-bottom: 50px; */
+	/* height: 55%; */
+}
+.pftitle{
+	/* position: flex; */
+	bottom: 8px;
+	right: 16px;
+	margin-left: 2%;
+}
+.pfp{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	/* margin-right: 35%; */
+}
+.indexpage {
+    font-family: 'Roboto Slab', serif;
+    /* color: white; */
+}
+.art1{
+	background-color: rgba(160, 235, 147, 0.87);
+	border-radius: 15px;
+	padding: 20px;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+}
+
+.mypic{
+    width: 100px;
+	border: 1px solid #fff;
+    border-radius: 100%;
+    border-color: white;
+}
+.about{
+	color: rgb(51, 51, 51);
+	text-align: center;
+	font-size: 36px;
+}
+/* For adding the projects  */
+#divProj{
+	display: flex;
+	justify-content: center;
+}
+#projNum{
+	margin-left: 10px;
+	color: white;
+	background-color:grey;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+}
+
+#divBut{
+	text-align: center;
+	float: right;
+}
+#formBut{
+	background-color: rgb(22, 22, 154);
+	/* font-family: 'Source Sans Pro', sans-serif; */
+	font-family: 'Roboto Slab', serif;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	text-decoration: none;
+}
+#formBut:hover {
+	background-color: rgb(48, 48, 200);
+}
+
+#formHide{
+	background-color: red;
+	font-family: 'Roboto Slab', serif;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	text-decoration: none;
+}
+#formHide:hover {
+	background-color: rgb(244, 92, 92);
+}
+/*---------- FOR THE FORM  -------------*/
+#formDiv {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	display: none;
+	text-align: center;
+}
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+input[type=text], input[type=number], textarea {
+	width: 70%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+#subBut:hover {
+	background-color: rgb(48, 48, 200);;
+}
+#subBut{
+	background-color: rgb(22, 22, 154);
+	font-family: 'Roboto Slab', serif;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	text-decoration: none;
+	/* float: center;
+	justify-content: center; */
+}
+/* for the check boxes of TECHNOLOGIES */
+#technolgy:hover .checkmark{
+	background-color: grey;
+}
+
+
+
+#projForm{
+	text-align: center;
+}
+/* FORM CSS ENDS HERE */
+
+/* for the Courses on index page */
+.coursehead{
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+.courses ul {
+    text-align: center;
+    padding-inline-start: 0;
+
+}
+
+.courses li {
+	text-align: center;
+	background-color: #e4c46b;
+    width: 48%;
+    border-radius: 15px;
+    margin: 1px;
+	display: inline-block;
+    vertical-align: top;
+}
+
+/* For the Projects on index page */
+.projhead{
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+.project ul {
+    text-align: center;
+    padding-inline-start: 0;
+
+}
+.project li {
+	text-align: center;
+	background-color: #e4976b;
+    width: 48%;
+    border-radius: 15px;
+    margin: 1px;
+	display: inline-block;
+    vertical-align: top;
+}
+.projs{
+	width: 110px;
+	margin-top: 20px;
+	/* border: 1px solid #fff; */
+    /* border-radius: 80%; */
+}
+.projs1{
+	width: 100px;
+	margin-top: 20px;
+	/* border: 1px solid #fff; */
+    /* border-radius: 80%; */
+}
+.projs2{
+	width: 110px;
+	margin-top: 20px;
+	/* border: 1px solid #fff; */
+    /* border-radius: 80%; */
+}
+.mob{
+	width: 110px;
+	margin-top: 20px;
+	/* border: 1px solid #fff; */
+    /* border-radius: 80%; */
+	display: none;
+}
+/* for work experience */
+.workhead{
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+.workex ul {
+    text-align: center;
+    padding-inline-start: 0;
+
+}
+
+.workex li {
+	align-self: center;
+	text-align: center;
+	background-color: #80c5e6;
+    width: 48%;
+    border-radius: 15px;
+    margin: 1px;
+	display: inline-block;
+    vertical-align: top;
+}
+
+
+/* For the page footer */
+.footer-main{
+	background: #333;
+	padding: 35px 30px 10px 10px;
+	border-radius: 15px;
+}
+
+.footer-main .footer-address,
+.footer-main .footer-media{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-main .footer-address{
+	width: 60%;
+}
+
+.footer-main .footer-address i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+
+.footer-main .footer-address p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin: 1px 1px 1px 1px;
+}
+
+.footer-main .footer-address p a{
+	color:  rgb(140, 211, 208);
+	text-decoration: none;;
+}
+.footer-main .footer-address{
+	margin-left: 80px;
+}
+.footer-main .footer-media{
+	margin-right: 30px;
+}
+
+.footer-main .footer-icons a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-color:  rgb(140, 211, 208);;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	line-height: 32px;
+}
+.footer-main .footer-media .footer-copyright .footer-p2{
+	color: white;
+	font-family:'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	margin-top: 50px;
+}
+.footer-main .footer-media .footer-icons .footer-p1{
+	color: white;
+	font-family:'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+/* For time table page */
+.backpage{
+    margin-left: 1100px;
+}
+.h1_2{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.time{
+    text-align: center;
+}
+.tab{
+    background-color: rgb(87, 157, 211);
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+td:hover{
+	background-color: rgb(127, 176, 213);
+}
+.link{
+    text-decoration: none;
+}
+tr:nth-child(even) {
+    background-color: rgb(43, 126, 189);
+}
+/* BUTTONS IN THE TIME TABLE CSS */
+.ed{
+	background-color: rgba(255, 226, 9, 0.921);
+	font-family: 'Roboto Slab', serif;
+	/* color: white; */
+	border: none;
+	border-radius: 5px;
+	padding-left: 7px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 7px;
+	cursor: pointer;
+	width: 100%;
+	/* font-size: 14px; */
+	text-decoration: none;
+}
+.ed:hover{
+	background-color: rgba(255, 240, 129, 0.921);
+}
+.del{
+	background-color: rgba(210, 64, 48, 0.921);
+	font-family: 'Roboto Slab', serif;
+	/* color: white; */
+	border: none;
+	border-radius: 5px;
+	padding-left: 7px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 7px;
+	cursor: pointer;
+	width: 100%;
+	/* font-size: 14px; */
+	text-decoration: none;
+}
+.del:hover{
+	background-color: rgba(255, 90, 72, 0.921);
+}
+.arow{
+	background-color: rgba(88, 171, 60, 0.921);
+	font-family: 'Roboto Slab', serif;
+	/* color: white; */
+	border: none;
+	border-radius: 5px;
+	padding-left: 7px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 7px;
+	cursor: pointer;
+	width: 100%;
+	/* font-size: 14px; */
+	text-decoration: none;
+}
+.arow:hover{
+	background-color: rgba(131, 254, 90, 0.921);
+}
+/* For courses page */
+.h1_3{
+	text-align: center;
+}
+.courseBody{
+	font-family: 'Roboto Slab', serif;
+}
+.c1{
+	width: 420;
+	height: 345;
+}
+.d1{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 50px;
+	/* background-color: #92999f; */
+	background-image: linear-gradient(rgb(180, 163, 141), rgb(172, 209, 160));
+	padding: 15px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+
+/* For making the site responsive adding this media tag */
+
+/* Mobile Display */
+@media only screen and (max-width:767px) {
+	.projs{
+		display: none;
+	}
+	.projs1{
+		display: none;
+	}
+	.projs2{
+		display: none;
+	}
+	.mob{
+		visibility: visible;
+		display: inline-block;
+		margin-left: 10px;
+	}
+	.courses li{
+		width: 80%;
+	}
+	.project li {
+		width: 80%;
+	}
+	.workex li{
+		width: 80%;
+	}
+	.footer-main{
+		width: fit-content;
+	}
+}
+/* Tablet Display */
+@media only screen and (max-width: 991px ) and (min-width: 768px){
+	.projs{
+		display: none;
+	}
+	.projs1{
+		display: none;
+	}
+	.projs2{
+		display: none;
+	}
+	.mob{
+		visibility: visible;
+		display: inline-block;
+		float: left;
+		margin-left: 10px;
+	}
+	.project li {
+		width: 48%;
+	}
+	.footer-main{
+		width: fit-content;
+	}
+}
+/* Desktop Display */
+@media only screen and (min-width: 992px) {
+	.project li {
+		max-width: 1000px;
+		width: 24%;
+	}
+}
